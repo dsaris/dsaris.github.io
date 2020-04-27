@@ -28,15 +28,15 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   
-  <link href="/css/animate.css" rel="stylesheet">
+  <link href="../../../../../css/animate.css" rel="stylesheet">
 
   
   
-    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="../../../../../css/style.default.css" rel="stylesheet" id="theme-stylesheet">
   
 
   
-  <link href="/css/custom.css" rel="stylesheet">
+  <link href="../../../../../css/custom.css" rel="stylesheet">
 
   
   
@@ -47,15 +47,15 @@
   
 
   
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="../../../../../img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../../../../../img/apple-touch-icon.png" />
 
   
-  <link href="/css/owl.carousel.css" rel="stylesheet">
-  <link href="/css/owl.theme.css" rel="stylesheet">
+  <link href="../../../../../css/owl.carousel.css" rel="stylesheet">
+  <link href="../../../../../css/owl.theme.css" rel="stylesheet">
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Universal">
+  <link rel="alternate" href="../../../../../index.xml" type="application/rss+xml" title="Universal">
 
   
   
@@ -116,9 +116,9 @@
 
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="Migrate from Jekyll logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="Migrate from Jekyll logo" class="visible-xs visible-sm">
+                <a class="navbar-brand home" href="../../../../../">
+                    <img src="../../../../../img/logo.png" alt="Migrate from Jekyll logo" class="hidden-xs hidden-sm">
+                    <img src="../../../../../img/logo-small.png" alt="Migrate from Jekyll logo" class="visible-xs visible-sm">
                     <span class="sr-only">Migrate from Jekyll - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
@@ -137,28 +137,28 @@
                   
                   <li class="dropdown">
                     
-                    <a href="/">Home</a>
+                    <a href="../../../../../">Home</a>
                     
                   </li>
                   
                   
                   <li class="dropdown active">
                     
-                    <a href="/blog/">Blog</a>
+                    <a href="../../../../../blog/">Blog</a>
                     
                   </li>
                   
                   
                   <li class="dropdown">
                     
-                    <a href="/faq/">FAQ</a>
+                    <a href="../../../../../faq/">FAQ</a>
                     
                   </li>
                   
                   
                   <li class="dropdown">
                     
-                    <a href="/contact/">Contact</a>
+                    <a href="../../../../../contact/">Contact</a>
                     
                   </li>
                   
@@ -231,7 +231,7 @@ With Jekyll, something that looked like</p>
 </code></pre>
 <p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="../../../../../overview/configuration/">Hugo configuration documentation</a> for details.</p>
 <h2 id="set-your-configuration-publish-folder-to-_site">Set your configuration publish folder to <code>_site</code></h2>
 <p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
 <ol>
@@ -253,10 +253,10 @@ With Jekyll, something that looked like</p>
 </li>
 </ol>
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="../../../../../layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="../../../../../doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
 <h3 id="implementation">Implementation</h3>
 <p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
 <p>Jekyll&rsquo;s plugin:</p>
@@ -426,23 +426,23 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             
             
             <li>
-                <a href="/categories/lorem">lorem (1)</a>
+                <a href="../../../../../categories/lorem">lorem (1)</a>
             </li>
             
             <li>
-                <a href="/categories/programming">programming (2)</a>
+                <a href="../../../../../categories/programming">programming (2)</a>
             </li>
             
             <li>
-                <a href="/categories/pseudo">pseudo (1)</a>
+                <a href="../../../../../categories/pseudo">pseudo (1)</a>
             </li>
             
             <li>
-                <a href="/categories/r">r (2)</a>
+                <a href="../../../../../categories/r">r (2)</a>
             </li>
             
             <li>
-                <a href="/categories/starting">starting (1)</a>
+                <a href="../../../../../categories/starting">starting (1)</a>
             </li>
             
         </ul>
@@ -468,39 +468,39 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             
             
             <li>
-                <a href="/tags/go"><i class="fas fa-tags"></i> go</a>
+                <a href="../../../../../tags/go"><i class="fas fa-tags"></i> go</a>
             </li>
             
             <li>
-                <a href="/tags/golang"><i class="fas fa-tags"></i> golang</a>
+                <a href="../../../../../tags/golang"><i class="fas fa-tags"></i> golang</a>
             </li>
             
             <li>
-                <a href="/tags/hugo"><i class="fas fa-tags"></i> hugo</a>
+                <a href="../../../../../tags/hugo"><i class="fas fa-tags"></i> hugo</a>
             </li>
             
             <li>
-                <a href="/tags/ipsum"><i class="fas fa-tags"></i> ipsum</a>
+                <a href="../../../../../tags/ipsum"><i class="fas fa-tags"></i> ipsum</a>
             </li>
             
             <li>
-                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
+                <a href="../../../../../tags/plot"><i class="fas fa-tags"></i> plot</a>
             </li>
             
             <li>
-                <a href="/tags/programming"><i class="fas fa-tags"></i> programming</a>
+                <a href="../../../../../tags/programming"><i class="fas fa-tags"></i> programming</a>
             </li>
             
             <li>
-                <a href="/tags/r-markdown"><i class="fas fa-tags"></i> r-markdown</a>
+                <a href="../../../../../tags/r-markdown"><i class="fas fa-tags"></i> r-markdown</a>
             </li>
             
             <li>
-                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
+                <a href="../../../../../tags/regression"><i class="fas fa-tags"></i> regression</a>
             </li>
             
             <li>
-                <a href="/tags/theme"><i class="fas fa-tags"></i> theme</a>
+                <a href="../../../../../tags/theme"><i class="fas fa-tags"></i> theme</a>
             </li>
             
         </ul>
@@ -552,40 +552,40 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/blog/2020/04/27/2020-04-27-posting-1/">
+                        <a href="../../../../../blog/2020/04/27/2020-04-27-posting-1/">
                           
-                            <img src="/img/placeholder.png" class="img-responsive" alt="posting 1">
+                            <img src="../../../../../img/placeholder.png" class="img-responsive" alt="posting 1">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/blog/2020/04/27/2020-04-27-posting-1/">posting 1</a></h5>
+                        <h5><a href="../../../../../blog/2020/04/27/2020-04-27-posting-1/">posting 1</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/blog/2015/10/02/linked-post/">
+                        <a href="../../../../../blog/2015/10/02/linked-post/">
                           
-                            <img src="/img/banners/banner-4.jpg" class="img-responsive" alt="Linked post">
+                            <img src="../../../../../img/banners/banner-4.jpg" class="img-responsive" alt="Linked post">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/blog/2015/10/02/linked-post/">Linked post</a></h5>
+                        <h5><a href="../../../../../blog/2015/10/02/linked-post/">Linked post</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/blog/2015/09/17/go-is-for-lovers/">
+                        <a href="../../../../../blog/2015/09/17/go-is-for-lovers/">
                           
-                            <img src="/img/banners/banner-2.jpg" class="img-responsive" alt="Go is for lovers">
+                            <img src="../../../../../img/banners/banner-2.jpg" class="img-responsive" alt="Go is for lovers">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/blog/2015/09/17/go-is-for-lovers/">Go is for lovers</a></h5>
+                        <h5><a href="../../../../../blog/2015/09/17/go-is-for-lovers/">Go is for lovers</a></h5>
                     </div>
                 </div>
                 
@@ -612,7 +612,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
       </p>
       
 
-            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+            <a href="../../../../../contact" class="btn btn-small btn-template-main">Go to contact page</a>
 
             <hr class="hidden-md hidden-lg hidden-sm">
 
@@ -664,12 +664,12 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
 <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
 
-<script src="/js/hpneo.gmaps.js"></script>
-<script src="/js/gmaps.init.js"></script>
-<script src="/js/front.js"></script>
+<script src="../../../../../js/hpneo.gmaps.js"></script>
+<script src="../../../../../js/gmaps.init.js"></script>
+<script src="../../../../../js/front.js"></script>
 
 
-<script src="/js/owl.carousel.min.js"></script>
+<script src="../../../../../js/owl.carousel.min.js"></script>
 
 
 
