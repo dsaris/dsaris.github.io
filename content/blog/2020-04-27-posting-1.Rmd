@@ -1,0 +1,13 @@
+---
+title: posting 1
+author: ariswa
+date: '2020-04-27'
+slug: posting-1
+categories:
+  - R
+tags:
+  - R Markdown
+---
+ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama ini adalah posting pertama   
+ ini adalah paragrap kedua  
+ 
